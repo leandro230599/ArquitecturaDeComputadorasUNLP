@@ -79,15 +79,15 @@ END
 
 ; PUSH: Carga la fuente en el tope de la pila, primero hace SP - 1, y almacena la parte alta, luego SP - 1, y almacena la parte baja
 ; Ejemplo: 
-; SP = 8000h, AX = 1234h
-; PUSH AX, SP - 1 => 8000h - 1 = 7FFFh | 7FFFh = 12h
+  SP = 8000h, AX = 1234h
+  PUSH AX, SP - 1 => 8000h - 1 = 7FFFh | 7FFFh = 12h
            SP - 1 => 7FFFh - 1 = 7FFEh | 7FFEh = 34h
-; SP queda en 7FFEh la cual contiene a 34h
+  SP queda en 7FFEh la cual contiene a 34h
 
 ; POP: Desapila el top de la pila y lo almacena en destino, primero saca el tope de la pila que es la parte baja y lo almacena en la parte baja
 ; del destino y hace SP + 1, y vuelve a sacar el tope de la pila que es la parte alta y lo almacena en la parte alta del estino y hace SP + 1
 ; Ejemplo:
-; SP = 7FFEh AX= Basura
-; POP AX, SP = 7FFEh = 34h => AL = 34h | SP + 1
+  SP = 7FFEh AX= Basura
+  POP AX, SP = 7FFEh = 34h => AL = 34h | SP + 1
           SP = 7FFFh = 12h => AH = 12h | SP + 1
-; SP queda en 8000h
+  SP queda en 8000h
