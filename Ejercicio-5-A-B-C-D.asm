@@ -63,4 +63,4 @@ C)
 
 ------------------------------------------------------
 D)
- Las del inciso B no se podrian reutilizar dado a que la carga se hace en la rutina, y el C si se puede reutilizar porque la carga se hace en el programa principal y le pasa el argumento de lo que tiene que utilizar
+; Las del inciso B no se podrian reutilizar dado a que la carga se hace en la rutina, y el C si se puede reutilizar porque la carga se hace en el programa principal y le pasa el argumento de lo que tiene que utilizar
