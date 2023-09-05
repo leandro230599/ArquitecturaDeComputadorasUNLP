@@ -6,11 +6,9 @@ caracteres DB 01h
 
 ORG 2000H
  MOV BX, OFFSET caracteres
- MOV AL, 1
- loop: int 7
-       inc byte ptr [bx]
-       cmp byte ptr[bx], 80h
-       jz fin
-       jmp loop
- fin:  INT 0
- END 
+ MOV AL, 08Fh
+ INT 7
+ INT 0
+END 
+
+
