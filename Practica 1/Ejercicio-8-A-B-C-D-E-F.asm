@@ -17,7 +17,8 @@ ORG 3000H ; Subrutina MUL
                  RET
        
 ORG 1000H ; Memoria de datos
-  CADENA DB  'a','b','c','d',00h
+  CADENA DB  "abcd"
+         DB  00h
   
 ORG 2000H; Prog principal
  ; parámetros
