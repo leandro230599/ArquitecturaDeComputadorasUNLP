@@ -28,11 +28,14 @@ mov bx, offset num1
 mov cl, [bx]
 mov bx, offset num2
 add cl, [bx]
-mov res, cl
+cmp cl, 0Ah
+js imprimir
+inc primer_dig
+sub cl, 0Ah
+imprimir: mov res, cl
 add res, 30h
-mov bx, offset res
+mov bx, offset primer_dig
+mov al, 2
 int 7
-
-
-
+int 0
 end
