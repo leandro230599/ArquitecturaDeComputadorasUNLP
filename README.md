@@ -38,6 +38,7 @@
 
 ## Pendientes
 
+1. Algunos ejercicios de la Practica 2, como el 7, agregar comentarios explicando los pasos
 
 ## Consultas realizadas
 
