@@ -34,7 +34,21 @@
 
 * OUT AL, DX se utiliza para CPU -> Dispositivo
 
-* El uso de DX y AL es obligatorio y es para ..... 
+* El uso de DX y AL es obligatorio y es por si quiero mandar los valores mediante registro, si quiero mandar la direccion de memoria, no puedo usar AX, BX o CX, tiene que ser DX
+
+* Para mandar una direccion de memoria a un dispositivo se usa DX, una etiqueta por ejemplo PIC+4 o la direccion directa por ejemplo 24h. Para recibir se usa si o si AX, AL, y para mandar lo mismo o el valor directo
+
+* En un LED 1 ON / 0 OFF
+
+* Se usa AND para ver el estado de un bit, si esta en 1 o 0
+
+* En la PIO, poner al CA/CB en 0 es de salida y 1 de entrada
+
+* PA 30H / PB 31H / CA 32H / CB 33H
+
+* PA y PB se configuran fisicamente, no programaticamente, no puedo determinar en que puerto iran los led o el interruptor, los enunciados deben decir el puerto asignado
+
+* Impresora tiene 20 columnas, imprime 1 caracter cada 5 segundos, la cola de impresion (Buffer) es de 5 caracteres. 3 linea de entrada DATA para Ascii, 1 linea de salida para BUSY (1 ocupado, 0 libre), 1 linea de entrada para STROBE (indica si hay caracter que imprimir en DATA cuando el pulso pasa de 0 a 1)
 
 ## Pendientes
 
