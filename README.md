@@ -48,7 +48,11 @@
 
 * PA y PB se configuran fisicamente, no programaticamente, no puedo determinar en que puerto iran los led o el interruptor, los enunciados deben decir el puerto asignado
 
-* Impresora tiene 20 columnas, imprime 1 caracter cada 5 segundos, la cola de impresion (Buffer) es de 5 caracteres. 3 linea de entrada DATA para Ascii, 1 linea de salida para BUSY (1 ocupado, 0 libre), 1 linea de entrada para STROBE (indica si hay caracter que imprimir en DATA cuando el pulso pasa de 0 a 1)
+* Impresora tiene 20 columnas, imprime 1 caracter cada 5 segundos, la cola de impresion (Buffer) es de 5 caracteres. 3 linea de entrada DATA para Ascii,
+
+  1 linea de salida para BUSY (1 ocupado, 0 libre), 
+
+  1 linea de entrada para STROBE (indica si hay caracter que imprimir en DATA cuando el pulso pasa de 0 a 1)
 
 ## Pendientes
 
