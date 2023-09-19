@@ -52,7 +52,11 @@
 
   1 linea de salida para BUSY (1 ocupado, 0 libre), 
 
-  1 linea de entrada para STROBE (indica si hay caracter que imprimir en DATA cuando el pulso pasa de 0 a 1)
+  1 linea de entrada para STROBE (indica si hay caracter que imprimir en DATA cuando el pulso pasa de 0 a 1) osea al setear en 1 le avisamos que hay dato
+
+* El Busy se lo configura de entrada porque es un estado que leo para ver si esta libre o no, y al Strobe de salida porque es un estado que le seteo a la impresora para que imprima
+
+* El PB para impresora se lo configura como salida porque seran los DATOS que se le manda al dispositivo
 
 ## Pendientes
 
